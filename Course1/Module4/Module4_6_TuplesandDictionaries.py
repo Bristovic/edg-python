@@ -171,4 +171,26 @@ for name in sorted(school_class.keys()):
         adding += score
         counter += 1
     print(name, ":", adding / counter)
-    
+
+# testing executing paths
+temperature = float(input("Enter current temperature: "))
+
+
+# four execution paths here
+def temp_check(tempr):
+    if tempr >= 100:
+        print("You are boiling, literally.")
+    elif tempr > 0:
+        print("Above freezing.")
+    elif tempr < 0:
+        print("Below freezing.")
+    else:
+        print("It is literally freezing right now.")
+
+
+# dataset to hit all execution paths
+temps = [-20, -10_000, 10, 99, 123, 0]
+
+# checking loop
+for temp in temps:
+    temp_check(temp)
