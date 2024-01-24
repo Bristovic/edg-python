@@ -158,11 +158,6 @@ def fib_num(n):
         return fib
 
 
-# test data
-for n in range(1, 10):  # testing
-    print(n, "->", fib_num_2(n))
-
-
 # recursion
 # use recursion to shorten code
 def fib_num_2(n):
@@ -172,6 +167,11 @@ def fib_num_2(n):
     if n < 3:
         return fib
     return fib_num_2(n - 1) + fib_num_2(n - 2)
+
+
+# test data
+for n in range(1, 10):  # testing
+    print(n, "->", fib_num_2(n))
 
 
 # reducing factorial code
