@@ -94,6 +94,7 @@ dict_dan["cat"] = "killing"
 dict_dan["swan"] = "svane"
 print(dict_dan)
 
+
 # updating dictionary with `update()` method
 dict_dan.update({"duck": "and"})
 print(dict_dan)
