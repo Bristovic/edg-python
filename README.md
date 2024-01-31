@@ -6,4 +6,5 @@ The courses themselves are here:
 [OpenEDG Courses](https://openedg.org/)
 
 ## Repository contents
-1. Python Essentials 1
+1. Python Essentials I
+2. Python Essentials II
