@@ -14,32 +14,35 @@ def sudoku_checker():
 
     # check row sum
     for row in table:
-        count = 0
         count = sum(row)
         if count != 45:
-            print("This sudoku is invalid.")
+            print("This sudoku is invalid. Check row", (table.index(row) + 1))
             return
 
     # check col sum
     for i in range(len(table)):
         count = 0
         for j in range(len(table[i])):
-            count += table[i][j]
+            count += table[j][i]
         if count != 45:
-            print("This sudoku is invalid.")
+            print("This sudoku is invalid. Check column", (i + 1))
             return
 
     # check squares sum
-    for i in
+    counts = 0
+    for r in range(0, (len(table) - 2), 3):
+        for c in range(0, (len(table) - 2), 3):
+            count = 0
+            for row in range(r, r+3):
+                for col in range(c, c+3):
+                    count += table[row][col]
+            counts += 1
+            if count != 45:
+                print("This sudoku is invalid. Check square", counts)
+                return
 
-    count = 0
+    # success
+    return print("Check complete. This sudoku is valid.")
 
-
-    print(table)
-
-if sum(table[row]) == 45:
-    success
-
-if sum(table[row])
 
 sudoku_checker()
