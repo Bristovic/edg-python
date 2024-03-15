@@ -9,4 +9,4 @@ The courses themselves are here:
 1. Python Essentials I
 2. Python Essentials II
 
-Complete
+Complete.
